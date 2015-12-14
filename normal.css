@@ -69,7 +69,10 @@ margin:.5em .5em .5em .5em;
 
 }
 
-
+.image{
+	width:100%;
+	margin:auto;
+}
 
 .image img {
 
@@ -85,13 +88,7 @@ margin:0 auto;
 
 }
 
-.container img{
 
-	margin-left:5em;
-	margin-right:10em;
-	margin-top:2em;
-	margin-bottom:2em;
-}
 }
 
 @media only screen and (min-width: 1000px){
