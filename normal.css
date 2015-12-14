@@ -16,9 +16,22 @@ border:2em grey;
 
 }
 
+.container{
 
+display:flex;
+justify-content: center;
+width:85%;
+margin:auto;
+}
+
+ol{
+	width:80%;
+	margin:0 auto;
+	
+}
 
 @media only screen and (min-width: 500px){
+
 
 nav a:hover { 
 display:inline;  
@@ -33,6 +46,7 @@ flex-direction: row;
 background-color:grey;
 border:2em black;
 width:100%;
+margin-bottom:3em;
 
 }
 nav a{
@@ -43,13 +57,7 @@ font-size:20px;
 font-weight: bold;
 text-align: center;
 width:100%;
-height:auto;
-margin-left:1em;
-margin-right:1em;
-margin-top:auto;
-margin-bottom:auto;
-padding-top:1em;
-padding-bottom:1em;
+margin:.5em .5em .5em .5em;
 
 }
 
@@ -63,19 +71,21 @@ padding-bottom:1em;
 
 }
 
-section{
-	margin-top:5em;
-	margin-bottom:5em;
-}
 
 
 .image img {
 
-width:65%;
+width:75%;
 height: auto;
 
 }
 
+section ol{
+
+width:100%;
+margin:0 auto;
+
+}
 
 .container img{
 
@@ -104,7 +114,6 @@ height: auto;
 	height:auto;
 
 }
-
 
 
 
