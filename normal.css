@@ -28,7 +28,7 @@ ol{
 }
 
 @media only screen and (min-width: 500px){
-	
+
 nav a:hover { 
 display:inline;  
 color: black; 
@@ -91,6 +91,11 @@ margin:0 auto;
 
 @media only screen and (min-width: 1000px){
 
+ol{
+	width:100%;
+	margin:0 15em auto;
+
+}
 
 .image img {
 
