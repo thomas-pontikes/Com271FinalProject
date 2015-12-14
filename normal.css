@@ -23,13 +23,17 @@ justify-content: center;
 }
 
 ol{
-	width:80%;
-	margin:0 15em auto;
-	
+	width:100%;
+	margin:0 auto;
 }
 
 @media only screen and (min-width: 500px){
 
+ol{
+	width:80%;
+	margin:0 15em auto;
+	
+}
 
 nav a:hover { 
 display:inline;  
