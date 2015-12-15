@@ -2,15 +2,20 @@
 include'header.html';
 require'connect.php';
 ?>
+<div class="container">
 <h1>Leave a comment:</h1>
-
+</div>
 <form action="comment.php" method="post">
 <div class="container">
 <input type="text" name="name" placeholder="YourName"/>
 </div>
+<div class="container">
 <textarea name="comment" cols="50" rows="5" placeholder="Leave a Comment"></textarea>
+</div>
+<div class="container">
 <input type="submit" value="comment" />
 </form>
+</div>
 
 
 <?php
@@ -24,8 +29,10 @@ while($row = $result->fetch_assoc()){
 	$comment= $row['comment'];
 
 echo'<div class="container">';
+echo'<section>';
 echo'<h2> ';echo"$comment_name";echo' </h2>';
 echo'<p>';echo"$comment";echo'</p>';
+echo'</section>';
 echo'</div>';
 
 }
