@@ -22,10 +22,6 @@ border:2em grey;
 }
 
 
-ol{
-	width:100%;
-	margin:0 auto;
-}
 
 @media only screen and (min-width: 500px){
 
@@ -72,7 +68,7 @@ margin:.5em .5em .5em .5em;
 	margin:auto;
 }
 
-.image img {
+.image{
 
 width:75%;
 height: auto;
@@ -99,7 +95,7 @@ ol{
 
 .image img {
 
-width:40%;
+width:50%;
 height: auto;
 
 }
