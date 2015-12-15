@@ -1,14 +1,27 @@
 <?php
-//First check if everything is filled in
-if(/*some statements*/)
-{
-//Do a mysql_real_escape_string() to all fields
 
-//Then insert comment
-mysql_query("INSERT INTO comments VALUES ($author,$postid,$body,$etc)");
-}
-else
+require'connect.php';
+
+if(isset($_POST["name"]) && $_POST["name"] !='' && isset($_POST["comment"]) && $_POST["comment"]!='')
 {
-die("Fill out everything please. Mkay.");
+
+$name = $_POST["name"];
+$comment = $_POST["comment"];
+
+$sql = "INSERT INTO comments VALUES('','$name','$comment')";
+
+$result = $link->query($sql);
+
+header("Location: form.html");
+
+}else{
+
+include'form.html';
+
+  echo" <h1>You did not enter text in one or both of the fields</h1>";
+  echo" <h2> Please Try Again! </h2>";
 }
+
+
+
 ?>

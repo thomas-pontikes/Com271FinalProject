@@ -1,32 +1,37 @@
 <?php
-include'header.php';
-?>
-
-<h1>Comments</h1>
-<?php
-$result = mysql_query("SELECT * FROM comments WHERE postid=0");
-//0 should be the current post's id
-while($row = mysql_fetch_object($result))
-{
-?>
-<div class="comment">
-By: <?php echo $row->author; //Or similar in your table ?>
-<p>
-<?php echo;$row->body; ?>
-</p>
-</div>
-<?php
-}
+include'header.html';
+require'connect.php';
 ?>
 <h1>Leave a comment:</h1>
+
 <form action="comment.php" method="post">
-<!-- Here the shit they must fill out -->
-<input type="hidden" name="postid" value="<?php //your posts id ?>" />
-<input type="submit" />
+<div class="container">
+<input type="text" name="name" placeholder="YourName"/>
+</div>
+<textarea name="comment" cols="50" rows="5" placeholder="Leave a Comment"></textarea>
+<input type="submit" value="comment" />
 </form>
 
 
+<?php
+$sql = "SELECT * FROM comments";
+
+$result = $link->query($sql);
+
+while($row = $result->fetch_assoc()){
+
+	$comment_name= $row['name'];
+	$comment= $row['comment'];
+
+echo'<div class="container">';
+echo'<h2> ';echo"$comment_name";echo' </h2>';
+echo'<p>';echo"$comment";echo'</p>';
+echo'</div>';
+
+}
+
+?>
 
 <?php
-include'footer.php';
+include'footer.html';
 ?>
