@@ -17,10 +17,10 @@ border:2em grey;
 }
 
 .container{
-
-display:flex;
-justify-content: center;
+	
+	width:100%;
 }
+
 
 ol{
 	width:100%;
@@ -93,13 +93,13 @@ margin:0 auto;
 
 ol{
 	width:100%;
-	margin:0 20em auto;
+	margin:0 auto;
 
 }
 
 .image img {
 
-width:60%;
+width:40%;
 height: auto;
 
 }
