@@ -1,6 +1,7 @@
 
 html{
 	font-family: 'Ubuntu', sans-serif;
+	background-color:#63A9BF;
 }
 
 .done{
@@ -18,6 +19,7 @@ background-color:#4CAF50;
 .container{
 	padding-top:0em;
 	padding-bottom: .5em;
+	background
 }
 
 nav a:hover:not(.active) {
@@ -51,9 +53,11 @@ margin:.5em .5em .5em .5em;
 }
 
 
-.arrow{
+.arrow img{
 
-    display: inline-block;
+    display:flex;
+	align-items: center;
+	justify-content: center;
     margin: auto;
 	width:5%;
 	height:auto;
