@@ -5,6 +5,11 @@ require'connect.php';
 <div class="container">
 <h1>Leave a comment:</h1>
 </div>
+<div class="container">
+<h2>UPDATE:</h2>
+<p>Inputs are now sanatized with <b>PHP: htmlspecialchars()</b> and <b>MySql: mysqli_real_escape_string()</b>
+</p>
+</div>
 <form action="comment.php" method="post">
 <div class="container">
 <input type="text" name="name" placeholder="YourName"/>
