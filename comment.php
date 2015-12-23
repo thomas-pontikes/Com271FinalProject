@@ -7,11 +7,14 @@ if(isset($_POST["name"]) && $_POST["name"] !='' && isset($_POST["comment"]) && $
 
 $name = mysqli_real_escape_string($link, $_POST["name"]);
 $comment = mysqli_real_escape_string($link, $comment = $_POST["comment"]);
+$email = mysqli_real_escape_string($link, $comment = $_POST["email"]);
 
 $name = htmlspecialchars($name);
 $comment = htmlspecialchars($comment);
 
-$sql = "INSERT INTO comments VALUES('','$name','$comment')";
+$choice = $_POST["yes.no"];
+
+$sql = "INSERT INTO comments VALUES('','$name','$comment','$email','$choice')";
 
 $result = $link->query($sql);
 
