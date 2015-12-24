@@ -39,11 +39,12 @@ nav a:hover:not(.active) {
 
 p{
 	color:darkslateblue;
-	font-size:14px;
+	font-size:20px;
 }
 
 h1{
 	color:seagreen;
+	font-size:26px;
 }
 @media only screen and (min-width: 500px){
 
