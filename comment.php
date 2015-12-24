@@ -5,14 +5,14 @@ require'connect.php';
 if(isset($_POST["name"]) && $_POST["name"] !='' && isset($_POST["text"]) && $_POST["text"]!='')
 {
 
+$choice = $_POST["YesNo"];
+
 $name = mysqli_real_escape_string($link, $_POST["name"]);
-$comment = mysqli_real_escape_string($link, $comment = $_POST["text"]);
-$email = mysqli_real_escape_string($link, $comment = $_POST["email"]);
+$comment = mysqli_real_escape_string($link, $_POST["text"]);
+$email = mysqli_real_escape_string($link, $_POST["email"]);
 
 $name = htmlspecialchars($name);
 $comment = htmlspecialchars($comment);
-
-$choice = $_POST["YesNo"];
 
 $sql = "INSERT INTO comments VALUES('','$name','$comment','$email','$choice')";
 

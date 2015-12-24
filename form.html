@@ -57,9 +57,10 @@ while($row = $result->fetch_assoc()){
 
 echo'<div class="container">';
 echo'<section>';
-echo'<h2> ';echo"$comment_name";echo' </h2>';
+echo'<h2>User: ';echo"$comment_name";echo'  </h2>';
 if($choice == "yes"){
-	echo'<h2>';echo"$email";echo'</h2>';
+echo'<h2>User: ';echo"$comment_name";echo'  </h2>';
+echo'<a href="mailto:';echo"$email";echo'>';echo"$email";echo"</a>";
 }
 echo'<p>';echo"$comment";echo'</p>';
 echo'</section>';
