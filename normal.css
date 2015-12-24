@@ -45,6 +45,9 @@ p{
 h1{
 	color:seagreen;
 }
+.center{
+	text-align:center;
+}
 @media only screen and (min-width: 500px){
 
 
