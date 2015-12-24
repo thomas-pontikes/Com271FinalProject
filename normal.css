@@ -1,8 +1,10 @@
 @font-face {
   font-family: "Ubuntu";
   src: url(../ubuntu-font-family-0.83/Ubuntu-L.ttf);
+  font-weight: normal;
+  font-style: normal;
 
-html{
+*{
 	font-family: 'Ubuntu';
 	background-color:#9DD1E3;
 }
