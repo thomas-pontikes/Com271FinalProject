@@ -12,7 +12,7 @@ $email = mysqli_real_escape_string($link, $comment = $_POST["email"]);
 $name = htmlspecialchars($name);
 $comment = htmlspecialchars($comment);
 
-$choice = $_POST["yes.no"];
+$choice = $_POST["YesNo"];
 
 $sql = "INSERT INTO comments VALUES('','$name','$comment','$email','$choice')";
 
